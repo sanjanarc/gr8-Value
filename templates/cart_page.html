@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>gr8 Value Cart</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+    <!-- Favicons -->
+    <link href="../static/assets/img/favicon-32x32.png" rel="icon"> 
+    <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script>"https://use.fontawesome.com/4190456980.js"</script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!--  Main CSS File -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+    
+        <!--<h1 class="logo me-auto me-lg-0"><a href="index.html">Kelly</a></h1>*/-->
+        <a href="index.html" onClick="toCart()" class="logo"><img src="../static/assets/img/logo.jpg" alt="" class="img-fluid"></a>
+        
+    
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="active" href="index.html" onClick="toCart()">HomePage</a></li>
+    
+            <li class="dropdown"><a href="#"><span>Aisles</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <ul>
+                
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Fruits and Vegetables')"> <span>Fruits & Vegetables</span></a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Bakery')"><span>Bakery</span> </a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Candy and Snacks')"><span>Snacks & Candy</span> </a>
+                 
+                </li>
+    
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Dairy and Eggs')"><span>Dairy & Eggs</span> </a>
+                 
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Deli & Ready Made Meals')"><span>Deli & Ready Made Meals</span> </a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Drinks')"><span>Drinks</span> </a>
+                 
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Meat and Seafood')"><span>Meat and Seafood</span> </a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Frozen')"><span>Frozen</span> </a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'International Foods')"><span>International Foods</span> </a>
+    
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Pantry')"><span> Pantry</span> </a>
+                  
+                </li>
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Cleaning, Paper')"><span> Cleaning & Paper</span> </a>
+                  
+                </li>
+          
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Health and Beauty')"><span> Health & Beauty </span> </a>
+                  
+                </li>
+    
+                <li class="dropdown"><a href="#" onclick="goToInteralLink(null,'Pet Care')"><span> Pet Care </span> </a>
+                  
+                </li>
+                
+              </ul>
+            </li>
+    
+            <li><a href="weekly_flyer.html">Weekly Flyer</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="pharmacy.html">Pharmacy & Health</a></li>
+    
+          </ul>
+        </nav><!-- .navbar -->
+    
+        <div class="header-social-links">
+          <!--<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+          <a href="#" class="linkedin"><i class="bi bi-person-circle"></i></i></a>
+          <a href="login_page.html" class="greeting">Log out</a>
+        </div>
+    
+      </div>
+    
+    </header><!-- End Header -->
+
+
+
+    <div id="cartG" class="grid">
+      <div class = "left">
+    
+        <div class="parent" >
+          <div class="sidenav" id = "mainList">
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;Shopping List</h1>
+            <div class="col-xs-8 col-xs-offset-2">
+              <form>
+                  <div  class="form-group">
+                      <textarea style="overflow:auto" id="urltext" placeholder="Please enter list item here..." class="form-control input-lg" rows="5"></textarea>
+                        <button type="button"  onclick="toHyperlink()"; ><i class="bi bi-plus"></i></button>
+                    </div>
+              </form>
+      
+          </div>
+          </div>
+      
+          <div class="totals" >
+            <h2 id="itemTotal"></h2>
+            <h3 id="costTotal"></h3>
+            <button href= cart_page.html d="cart"><i class="bi bi-cart"  aria-hidden="true" onclick="toShopping()">
+              Back to Shopping
+            </i></button>
+      
+            <script type="text/javascript">
+              function toShopping()
+              {
+                var myDomain = "index.html";
+                saveItems();
+                window.location.href = myDomain;
+              }
+              </script>  
+      
+            </div>
+            
+      
+        </div>
+    
+      </div>
+      <div class = "right">
+        <!-- ======= Feed Section ======= -->
+        <section id="feed" class="feed">
+
+          <div style="padding-bottom:50px" class="section-title">
+      
+            <h1>ItemsSummary</h1>
+      
+          </div>
+      
+          <div  id="cartG" class="container" data-aos="fade-up">
+      
+                  <div   class="col-12">
+                      <div class="card-body p-0">
+                        <div class="row g-0">
+                          
+                          <div id ="tempCart" class="col-lg-8">
+                            <h style=" color:rgb(114, 106, 106);"> Product  </h>
+      
+                            <h style=" color:rgb(133, 127, 127); padding-left:300px"> Quantity  </h>
+      
+      
+                            <h style="  color:rgb(126, 122, 122); padding-left:100px"> Price  </h>
+      
+                            </div>
+                          </div>
+                          <div class="col-lg-4 bg-grey">
+                           
+                          </div>
+                        </div>
+                      </div>
+                    
+                  </div>
+                </div>
+      
+          </div>
+   
+            <div style="align-items: center;" class="row gy-4 justify-content-center" id = main_cart>        
+            </div>
+          </div>
+          </section><!-- End Feed Section -->
+          
+    
+      </div>
+
+      <div class = "right">
+        <div class="sidenav" id = "right">
+          <h1 style="margin-left:25%;">Other Info</h1>
+
+
+          <button style="margin-left:22%; margin-top: 40px; margin-right: 2%;"> Pickup</button>
+          <p2 type="button"> or </p2>
+          <button style="margin-left: 2%;" type="button"> Delivery</button>
+          <textarea style=" height:40%; overflow: hidden; width:100%; ; margin-left:5%; margin-right:5%; margin-top: 10%; margin-bottom: 10%;" id="urltext" placeholder="Please enter any delivery notes you may have.." class="form-control input-lg" rows="5"></textarea>
+        
+        </div>
+    
+        <div class="totals" id="right" >
+          <h4 id="taxLabel">Tax:_______</h4>
+          <h2 id="serviceLabel">Service Fee: ________</h2>
+          <h3 id="totalLabel">Total:  ________</h3>
+          <button href= "checkout_page.html" onclick="toPay()" d="cart"><i class="bi bi-cart" aria-hidden="true">
+            Proceed To Checkout
+          </i></button>
+    
+          <script type="text/javascript">
+            function toPay()
+            {
+              var myDomain = "checkout_page.html";
+              window.location.href = myDomain;
+            }
+            </script>  
+    
+          </div>
+          
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    
+
+    
+      
+  
+    
+
+
+
+    
+  
+
+
+  
+  
+  <!-- ======= Footer ======= -->
+  <footer  id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>gr8Value</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+  <script src="../static/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+  <script src="../static/assets/js/cart_page.js"></script>
+  <script src="../static/assets/js/link_signin.js"></script>
+
+
+
+</body>
+
+</html>
